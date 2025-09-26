@@ -1,0 +1,201 @@
+﻿@model PurchaseCart
+
+<!-- Include Select2 CSS and JS -->
+@section Styles
+{
+    @* <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> *@
+    <link rel="stylesheet" href="~/Admin/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="~/Admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <style>
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #444;
+            line-height: 0px;
+        }
+
+        .select2-container .select2-selection--single .select2-selection__rendered {
+            display: block;
+            padding-left: 0px;
+            padding-right: 0px;
+            overflow: visible;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .select2-container--default .select2-selection--single {
+            background-color: #fff;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Purchase Form</h4>
+                <p class="card-description"> @ResGeneral.lblNew or @ResGeneral.lblEdit </p>
+                <form class="forms-sample col-md-12" method="post" enctype="multipart/form-data"
+                      asp-controller="Purchase" asp-action="Save" role="form" asp-area="Admin" id="purchaseForm">
+                      <input type="hidden" asp-for="@Model.invoiceId"/>
+                      <input type="hidden" asp-for="@Model.isNew"/>
+
+                    <!-- Supplier Selection -->
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label>@ResAdmin.lblSupplierName</label>
+                            <select class="js-example-basic-single form-control" style="width:100%" asp-for="SupplierId" asp-items="@(new SelectList(ViewBag.lstSuppliers, "SupplierId", "SupplierName"))">
+                            </select>
+                            <span class="text-danger" asp-validation-for="SupplierId"></span>
+                        </div>
+                    </div>
+
+                    <!-- Books Table -->
+                    <table class="table table-hover col-md-12" id="booksTable">
+                        <thead>
+                            <tr>
+                                <th>@ResAdmin.lblTitle</th>
+                                <th>@ResAdmin.lblPrice</th>
+                                <th>@ResAdmin.lblQuantity</th>
+                                <th>@ResGeneral.lblActions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.lstBooks.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        <select class="form-control book-select js-example-basic-single" style="width:100%" name="lstBooks[@i].BookId" asp-for="@Model.lstBooks[i].BookId">
+                                            <option value="">-- Select Book --</option>
+                                            @foreach (var book in ViewBag.lstBook2)
+                                            {
+                                                <option value="@book.BookId" data-price="@book.PurchasePrice">@book.Title</option>
+                                            }
+                                        </select>
+                                        <span class="text-danger" asp-validation-for="lstBooks[@i].BookId"></span>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control price-input" name="lstBooks[@i].Price" placeholder="Price" asp-for="@Model.lstBooks[i].Price" readonly>
+                                        <input type="hidden" class="form-control InvoiceBookId-input" name="lstBooks[@i].InvoiceBookId" placeholder="InvoiceBookId" asp-for="@Model.lstBooks[i].InvoiceBookId" readonly>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control quantity-input" name="lstBooks[@i].PurchaseQty" placeholder="Quantity" min="1" max="10000" asp-for="@Model.lstBooks[i].PurchaseQty">
+                                        <span class="text-danger" asp-validation-for="lstBooks[@i].PurchaseQty"></span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger remove-row">@ResGeneral.lblRemove</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <!-- Add Book Button -->
+                    <div class="form-group">
+                        <button type="button" class="btn btn-info" id="addBookBtn">@ResGeneral.lblNew</button>
+                    </div>
+
+                    <!-- Form Submission Buttons -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-gradient-primary me-2">@ResGeneral.lblSubmit</button>
+                        <a type="button" class="btn btn-light" asp-controller="Purchase" asp-action="List" asp-area="Admin">@ResGeneral.lblCancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+    <!-- Plugin js for this page -->
+    <script src="~/Admin/vendors/select2/select2.min.js"></script>
+    <script src="~/Admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page -->
+    <script src="~/Admin/js/file-upload.js"></script>
+    <script src="~/Admin/js/typeahead.js"></script>
+    <script src="~/Admin/js/select2.js"></script>
+    <!-- End custom js for this page -->
+
+    <script type="text/template" id="bookRowTemplate">
+        <tr>
+            <td>
+                <select class="form-control book-select js-example-basic-single" style="width:100%" name="lstBooks[__index__].BookId">
+                    <option value="">-- Select Book --</option>
+        @foreach (var book in ViewBag.lstBook2)
+        {
+                            <option value="@book.BookId" data-price="@book.PurchasePrice">@book.Title</option>
+        }
+                </select>
+                <span class="text-danger"></span>
+            </td>
+            <td>
+                <input type="number" class="form-control price-input" name="lstBooks[__index__].Price" placeholder="Price" readonly>
+                <input type="hidden" class="form-control InvoiceBookId-input" name="lstBooks[__index__].InvoiceBookId" placeholder="InvoiceBookId" readonly>
+            </td>
+            <td>
+                <input type="number" class="form-control quantity-input" name="lstBooks[__index__].PurchaseQty" placeholder="Quantity" min="1" max="10000">
+                <span class="text-danger"></span>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger remove-row">@ResGeneral.lblRemove</button>
+            </td>
+        </tr>
+    </script>
+
+ 
+    <script>
+        $(document).ready(function () {
+
+            $('.js-example-basic-single').select2();
+
+            function updatePrice(selectElement) {
+                var selectedOption = selectElement.find('option:selected');
+                var price = selectedOption.data('price') || 0;
+
+                selectElement.closest('tr').find('.price-input').val(price);
+
+            }
+
+            $('.book-select').each(function () {
+                console.log("here 3")
+                updatePrice($(this));
+            });
+
+            $(document).on('change', '.book-select', function () {
+                updatePrice($(this));
+            });
+
+
+            $('#addBookBtn').click(function () {
+
+                var newIndex = $('#booksTable tbody tr').length;
+
+                var rowTemplate = $('#bookRowTemplate').html().replace(/__index__/g, newIndex);
+
+                $('#booksTable tbody').append(rowTemplate);
+
+                $('.js-example-basic-single').last().select2();
+
+                $('.book-select').last().trigger('change');
+            });
+
+
+            $(document).on('click', '.remove-row', function () {
+                $(this).closest('tr').remove();
+
+                reindexRows();
+            });
+
+            function reindexRows() {
+                $('#booksTable tbody tr').each(function (index) {
+                    $(this).find('.book-select').attr('name', 'lstBooks[' + index + '].BookId');
+                    $(this).find('.price-input').attr('name', 'lstBooks[' + index + '].Price');
+                    $(this).find('.InvoiceBookId-input').attr('name', 'lstBooks[' + index + '].InvoiceBookId');
+                    $(this).find('.quantity-input').attr('name', 'lstBooks[' + index + '].PurchaseQty');
+                });
+            }
+        });
+    </script>
+}
+

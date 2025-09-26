@@ -1,0 +1,94 @@
+﻿@model List<VwSalesInvoice>
+@section Styles {
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="~/Admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <!-- End plugin css for this page -->
+    <style>
+        #order-listing td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+            #order-listing td:nth-child(2) {
+                max-width: 150px;
+            }
+
+            #order-listing td img {
+                width: 160px;
+                height: 100px;
+                object-fit: contain;
+                border-radius: 0;
+            }
+    </style>
+}
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> Purchase </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" asp-area="Admin">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data table</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Purchase Invoices</h4>
+            <a class="btn btn-success btn-fw" asp-controller="Sales" asp-action="Edit" asp-area="Admin">@ResGeneral.lblNew</a>
+            <div class="row">
+                <div class="col-12">
+                    <div id="order-listing_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table id="order-listing" class="table dataTable no-footer" aria-describedby="order-listing_info">
+                                    <thead>
+                                        <tr>
+                                            <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 10%;">No.</th>
+                                            <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="InvoiceId: activate to sort column ascending" style="width: 10%;">@ResAdmin.lblInvoiceId</th>
+                                            <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Invoice Date: activate to sort column ascending" style="width: 20%;">@ResAdmin.lblInvoiceDate</th>
+                                            <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Total: activate to sort column ascending" style="width: 20%;">@ResAdmin.lblTotal</th>
+                                            <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Customer: activate to sort column ascending" style="width: 20%;">@ResAdmin.lblCustomerName</th>
+                                            <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Delivery Man: activate to sort column ascending" style="width: 20%;">@ResAdmin.lblDeliveryManName</th>
+                                            <th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 20%;">@ResGeneral.lblActions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for (int i = 0; i < Model.Count(); i++)
+                                        {
+
+                                            <tr>
+                                                <td>@(i+1)</td>
+                                                <td>@Model[i].InvoiceId</td>
+                                                <td>@Model[i].InvoiceDate</td>
+                                                <td>@Model[i].TotalPrice</td>
+                                                <td>@Model[i].CutomerName</td>
+                                                <td>@Model[i].DeliveryManName</td>
+                                                <td>
+                                                    <a class="btn btn-success btn-fw" asp-controller="Sales" asp-action="ShowDetails" asp-area="Admin" asp-route-id="@Model[i].InvoiceId">@ResGeneral.lblView</a>
+                                                    <a class="btn btn-info btn-fw" asp-controller="Sales" asp-action="Edit" asp-area="Admin" asp-route-id="@Model[i].InvoiceId">@ResGeneral.lblEdit</a>
+                                                    <a class="btn btn-danger btn-fw" asp-controller="Sales" asp-action="Delete" asp-area="Admin" asp-route-id="@Model[i].InvoiceId">@ResGeneral.lblDelete</a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Plugin js for this page -->
+    <script src="~/Admin/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="~/Admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page -->
+    <script src="~/Admin/js/data-table.js"></script>
+    <!-- End custom js for this page -->
+} 

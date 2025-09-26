@@ -1,0 +1,243 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BookStore
+build_property.RootNamespace = BookStore
+build_property.ProjectDir = E:\visual studio projects 2022\Web Diplom ASP .NET Projects\ASP .NET Core MVC\BookStoreProject\BookStore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\visual studio projects 2022\Web Diplom ASP .NET Projects\ASP .NET Core MVC\BookStoreProject\BookStore
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Author/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Author/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Book/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Book/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Categories/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/DeliveryMan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVsaXZlcnlNYW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/DeliveryMan/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVsaXZlcnlNYW5cTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Discount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Discount/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Governorate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR292ZXJub3JhdGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Governorate/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR292ZXJub3JhdGVcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Governorate/Save.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR292ZXJub3JhdGVcU2F2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Pages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFnZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Pages/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFnZXNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Publish/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHVibGlzaFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Publish/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHVibGlzaFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Publish/Save.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHVibGlzaFxTYXZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Purchase/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHVyY2hhc2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Purchase/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHVyY2hhc2VcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Purchase/ShowDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHVyY2hhc2VcU2hvd0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Sales/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Sales/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FsZXNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Sales/ShowDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FsZXNcU2hvd0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Setting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2V0dGluZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Slider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Slider/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Supplier/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3VwcGxpZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/Supplier/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3VwcGxpZXJcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Book/AuthorBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xBdXRob3JCb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Book/BookDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xCb29rRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Book/BookList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xCb29rTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Category/CategoryBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlCb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Category/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Error/E403.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRTQwMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Error/E404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRTQwNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Error/E500.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRTUwMC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Order/CustomerInvoiceInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3VzdG9tZXJJbnZvaWNlSW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Order/MyCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTXlDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Order/MyOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTXlPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Order/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Order/ShowOrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcU2hvd09yZGVyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Order/SuccedOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcU3VjY2VkT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Shared/BookBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJvb2tCb3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/visual studio projects 2022/Web Diplom ASP .NET Projects/ASP .NET Core MVC/BookStoreProject/BookStore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

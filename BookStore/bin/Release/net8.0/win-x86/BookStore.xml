@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookStore</name>
+    </assembly>
+    <members>
+        <member name="M:BookStore.ApiControllers.BookController.Get">
+            <summary>
+            Get All Books From Database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore.ApiControllers.BookController.Get(System.Int32)">
+            <summary>
+            Get Book By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore.ApiControllers.BookController.GetByCategoryId(System.Int32)">
+            <summary>
+            Get books by CategoryId
+            </summary>
+            <param name="CategoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore.ApiControllers.BookController.Post(BookStore.Models.TbBook)">
+            <summary>
+            Add book in database
+            </summary>
+            <param name="book"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore.ApiControllers.BookController.Delete(System.Int32)">
+            <summary>
+            Delete book from database
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="P:BookStore.Models.ApiResponse.Data">
+            <summary>
+            data coming from api
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.ApiResponse.Error">
+            <summary>
+            list of api error
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.ApiResponse.StatusCode">
+            <summary>
+             api status code 200=success , 400 = faild
+            </summary>
+        </member>
+        <member name="T:BookStore.Resources.ResAdmin">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAddress">
+            <summary>
+              Looks up a localized string similar to Address.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAge">
+            <summary>
+              Looks up a localized string similar to Age.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAllBookAuthor">
+            <summary>
+              Looks up a localized string similar to All Book Authors.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAllBookCategories">
+            <summary>
+              Looks up a localized string similar to All Book Categories.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAllBookDiscounts">
+            <summary>
+              Looks up a localized string similar to All Book Discounts.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAllBooks">
+            <summary>
+              Looks up a localized string similar to All Books.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAllBookSuppliers">
+            <summary>
+              Looks up a localized string similar to All Book Suppliers.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAllDeliveryMen">
+            <summary>
+              Looks up a localized string similar to All Delivery Men.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAuthorInfo">
+            <summary>
+              Looks up a localized string similar to Author Information.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblAuthorName">
+            <summary>
+              Looks up a localized string similar to Author Name.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblCategoryName">
+            <summary>
+              Looks up a localized string similar to Category Name.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblCustomerInfo">
+            <summary>
+              Looks up a localized string similar to CustomerInfo.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblCustomerName">
+            <summary>
+              Looks up a localized string similar to Customer Name.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblDeliveryManName">
+            <summary>
+              Looks up a localized string similar to DeliveryMan Name.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblDescription">
+            <summary>
+              Looks up a localized string similar to Description.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblDiscountPercent">
+            <summary>
+              Looks up a localized string similar to Discount Percent.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblExpiryDate">
+            <summary>
+              Looks up a localized string similar to Expiry Date.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblGovernorateName">
+            <summary>
+              Looks up a localized string similar to Governorate Name.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblImage">
+            <summary>
+              Looks up a localized string similar to Image.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblInvoiceDate">
+            <summary>
+              Looks up a localized string similar to Invoice Date.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblInvoiceId">
+            <summary>
+              Looks up a localized string similar to InvoiceId.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblIsbn">
+            <summary>
+              Looks up a localized string similar to Isbn.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblNumPages">
+            <summary>
+              Looks up a localized string similar to Number of pages.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblPhone">
+            <summary>
+              Looks up a localized string similar to Phone.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblPrice">
+            <summary>
+              Looks up a localized string similar to Price.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblPublisherName">
+            <summary>
+              Looks up a localized string similar to Publisher Name.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblPublishYear">
+            <summary>
+              Looks up a localized string similar to Publish Year.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblPurchaseInvoice">
+            <summary>
+              Looks up a localized string similar to Purchase Invoice.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblPurchasePrice">
+            <summary>
+              Looks up a localized string similar to Purchase Price.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblQuantity">
+            <summary>
+              Looks up a localized string similar to Quantity.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblSalary">
+            <summary>
+              Looks up a localized string similar to Salary.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblSalesInvoice">
+            <summary>
+              Looks up a localized string similar to Sales Invoice.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblSalesPrice">
+            <summary>
+              Looks up a localized string similar to Sales Price.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblShippingCost">
+            <summary>
+              Looks up a localized string similar to Shipping Cost.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblShippingGovernorates">
+            <summary>
+              Looks up a localized string similar to Shipping Governorates.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblShowHomePage">
+            <summary>
+              Looks up a localized string similar to Show in Home Page.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblStatus">
+            <summary>
+              Looks up a localized string similar to Status.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblSupplierName">
+            <summary>
+              Looks up a localized string similar to Supplier Name.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblTitle">
+            <summary>
+              Looks up a localized string similar to Title.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblTotal">
+            <summary>
+              Looks up a localized string similar to Total.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResAdmin.lblUnitCost">
+            <summary>
+              Looks up a localized string similar to Unit Cost.
+            </summary>
+        </member>
+        <member name="T:BookStore.Resources.ResGeneral">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblActions">
+            <summary>
+              Looks up a localized string similar to Actions.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblBack">
+            <summary>
+              Looks up a localized string similar to Back.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblCancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblDelete">
+            <summary>
+              Looks up a localized string similar to Delete.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblEdit">
+            <summary>
+              Looks up a localized string similar to Edit.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblNew">
+            <summary>
+              Looks up a localized string similar to Add New.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblRemove">
+            <summary>
+              Looks up a localized string similar to Remove.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblSave">
+            <summary>
+              Looks up a localized string similar to Save.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblSubmit">
+            <summary>
+              Looks up a localized string similar to Submit.
+            </summary>
+        </member>
+        <member name="P:BookStore.Resources.ResGeneral.lblView">
+            <summary>
+              Looks up a localized string similar to View.
+            </summary>
+        </member>
+    </members>
+</doc>

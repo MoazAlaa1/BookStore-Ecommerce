@@ -1,0 +1,22 @@
+﻿ @model List<TbCategory>
+
+<!-- breadcrumb End -->
+<!--section start-->
+<br />
+<br />
+<br />
+<div class="container category-button">
+    <h2>All Categories</h2>
+    <section class="section-b-space border-section border-bottom-0">
+        <div class="row partition1">
+            @foreach (var category in Model)
+            {
+                <div class="product-box col-xl-4 col-lg-4 col-sm-4 col-8" style="margin-bottom:25px">
+                    <a class="btn btn-outline btn-block" asp-controller="Category" asp-action="CategoryBooks"
+                    asp-route-id="@category.CategoryId" asp-route-name="@category.CategoryName">@category.CategoryName</a>
+                </div>
+            }          
+        </div>
+    </section>
+</div>
+<!-- product section end -->

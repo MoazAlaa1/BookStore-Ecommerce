@@ -1,0 +1,177 @@
+﻿@model VwSalesInvoice
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="~/Fontend/images/favicon/1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Fontend/images/favicon/1.png" type="image/x-icon">
+    <title>BookStore</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="~/Fontend/css/fontawesome.css">
+    <!--Slick slider css-->
+    <link rel="stylesheet" type="text/css" href="~/Fontend/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/Fontend/css/slick-theme.css">
+    <!-- Animate icon -->
+    <link rel="stylesheet" type="text/css" href="~/Fontend/css/animate.css">
+
+    <!-- Themify icon -->
+    <link rel="stylesheet" type="text/css" href="~/Fontend/css/themify-icons.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="~/Fontend/css/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="~/Fontend/css/color19.css" media="screen" id="color">
+
+    <style type="text/css">
+        body {
+            text-align: center;
+            margin: 0 auto;
+            width: 650px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #e2e2e2;
+            display: block;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            text-decoration: unset;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        h5 {
+            color: #444;
+            text-align: left;
+            font-weight: 400;
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .main-bg-light {
+            background-color: #fafafa;
+        }
+
+        .title {
+            color: #444444;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-bottom: 0;
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 1;
+        }
+
+        table {
+            margin-top: 30px
+        }
+
+        .footer-social-icon tr td img {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body style="margin: 20px auto;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0"
+           style="padding: 0 30px;background-color: #fff; -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);width: 100%;">
+        <tbody>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <img src="~/Fontend/images/email-temp/delivery.png" alt=""
+                                     style=";margin-bottom: 30px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/Fontend/images/email-temp/success.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 class="title">thank you</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Payment Is Successfully Processsed And Your Order Is On The Way</p>
+                                <p>Transaction ID:267676GHERT105467</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-top:1px solid #777;height:1px;margin-top: 30px;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br />
+                                <br />
+                                <div>
+                                    <a asp-controller="Home" asp-action="Index" class="btn-solid btn">Continue</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px;">
+                                <div>
+                                    <h4 class="title" style="margin:0;text-align: center;">Follow us</h4>
+                                </div>
+                                <table border="0" cellpadding="0" cellspacing="0" class="footer-social-icon" align="center"
+                                       class="text-center" style="margin-top:20px;">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="~/Fontend/images/email-temp/facebook.png" alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="~/Fontend/images/email-temp/youtube.png" alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="~/Fontend/images/email-temp/twitter.png" alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="~/Fontend/images/email-temp/gplus.png" alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="~/Fontend/images/email-temp/linkedin.png" alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><img src="~/Fontend/images/email-temp/pinterest.png" alt=""></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div style="border-top: 1px solid #ddd; margin: 20px auto 0;"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

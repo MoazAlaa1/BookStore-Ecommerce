@@ -1,0 +1,167 @@
+﻿ @model VmBookDetails
+<!-- breadcrumb start -->
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="page-title">
+                    <h2>product</h2>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">product</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb End -->
+<!-- section start -->
+<section>
+    <div class="collection-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-slick">
+                        <div>
+                            <img src="@Model.Book.ImageName" alt=""
+                                    class="img-fluid blur-up lazyload image_zoom_cls-0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 rtl-text">
+                    <div class="product-right">
+                        <h2 class="mb-0">@Model.Book.Title</h2>
+                        <h5 class="mb-2">by <a asp-controller="Book" asp-action="AuthorBooks"
+                                  asp-route-id="@Model.Book.AuthorId" asp-route-name="@Model.Book.AuthorName">@Model.Book.AuthorName</a>
+                        </h5>
+                        @if(Model.Book.DiscountPercent > 0)
+                        {
+                            <h4><del>$@Model.Book.SalesPrice</del><span>@Model.Book.DiscountPercent % off</span></h4>
+                            <h3>$@Model.PriceDiscounted</h3>
+                        }                        
+                        else
+                        {
+                            <h3>$@Model.Book.SalesPrice</h3>
+                        }
+                        <p>@Model.Book.CategoryName</p>
+                        <p>Pages        : @Model.Book.NumberOfPages</p>
+                        <p>Publisher    : @Model.Book.Publisher</p>
+                        <p>Publish Year : @Model.Book.PublishYear</p>
+                        <br />
+                        
+                        <div class="product-buttons">
+                            <a asp-controller="Order" asp-action="AddToCart" asp-route-bookId="@Model.Book.BookId " 
+                               class="btn btn-solid col-md-8">add to cart</a>
+                        </div>
+                        <div class="border-product">
+                            <h6 class="product-title">product details</h6>
+                            <p>
+                                 @Model.Book.Description 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section ends -->
+<!-- product-tab starts -->
+<section class="tab-product m-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="top-home-tab" data-toggle="tab"
+                           href="#top-home" role="tab" aria-selected="true">Description</a>
+                        <div class="material-border"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-top-tab" data-toggle="tab"
+                           href="#top-profile" role="tab" aria-selected="false">Details</a>
+                        <div class="material-border"></div>
+                    </li>
+                </ul>
+                <div class="tab-content nav-material" id="top-tabContent">
+                    <div class="tab-pane fade show active" id="top-home" role="tabpanel"
+                         aria-labelledby="top-home-tab">
+                        <p>
+                            @Model.Book.Description
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="top-profile" role="tabpanel" aria-labelledby="profile-top-tab">
+                        <p>
+                            @Model.Book.Description
+                        </p>
+                        <div class="single-product-tables">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Author</td>
+                                        <td>@Model.Book.AuthorName</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Category</td>
+                                        <td>@Model.Book.CategoryName</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Isbn</td>
+                                        <td>@Model.Book.Isbn</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Publisher</td>
+                                        <td>@Model.Book.Publisher</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Publish Year</td>
+                                        <td>@Model.Book.PublishYear</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product-tab ends -->
+<!-- product section start -->
+<section class="section-b-space ratio_asos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 product-related">
+                <h2>related products</h2>
+            </div>
+        </div>
+        <div class="row game-product grid-products">
+            @foreach (var book in Model.lstRelatedBooks)
+            {
+
+                    <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <partial name="BookBox" model="@book" />
+                    </div>
+                
+            }
+            
+        </div>
+    </div>
+</section>
+<!-- product section end -->
+
+@section Scripts
+{
+    <!-- Zoom js-->
+    <script src=".~/Fontend/js/jquery.elevatezoom.js"></script>
+
+}

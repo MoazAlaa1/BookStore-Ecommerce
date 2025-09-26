@@ -1,0 +1,182 @@
+﻿@model VmHomePages
+
+<!-- Home slider -->
+<section class="p-0 layout-7">
+    <div class="slide-1 home-slider">
+        @foreach (var slider in Model.lstSliders)
+        {
+            <div>
+                <div class="home text-left">
+                    <img src="~/Uploads/Sliders/@slider.ImageName" alt="" class="bg-img blur-up lazyload">
+                    <div class="container-fluid custom-container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="slider-contain">
+                                    <div>
+                                        <h4>@slider.Title</h4>
+                                        <h1>@slider.Description</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</section>
+<!-- Home slider end -->
+
+<!-- collection banner -->
+<section class="pb-0 ratio2_1">
+    <div class="container-fluid">
+        <div class="row category-border">
+            @foreach (var category in Model.lstCategories)
+            {
+                <div class="col-sm-4 border-padding">
+                    <a asp-controller="Category" asp-action="CategoryBooks" asp-route-id="@category.CategoryId" asp-route-name="@category.CategoryName">
+                        <div class="collection-banner">
+                            <div class="img-part bg-size blur-up lazyloaded" style="background-image: url(&quot;~/Fontend/images/books/banner/1.jpg&quot;); background-size: cover; background-position: center center; display: block;">
+                                <img src="~/Uploads/Categories/@category.ImageName" class="img-fluid blur-up lazyload bg-img" alt="" style="display: none;">
+                            </div>
+                            <div class="contain-banner">
+                                <div>
+                                    <br />
+                                    <br />
+                                    <h3 class="text-capitalize" style="color:black; font-size:25px; font-weight:600" >@category.CategoryName</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            } 
+        </div>
+    </div>
+</section>
+<!-- collection banner end -->
+<!-- Paragraph-->
+<div class="title1 section-t-space">
+    <h2 class="title-inner1">Special Books</h2>
+</div>
+<br/>
+<br/>
+<!-- Product section -->
+<section class="pt-0 section-b-space ratio_asos">
+    <div class="container">
+        <div class="row game-product grid-products">            
+            @foreach (var book in Model.lstAllBooks)
+            {
+                <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6" style="width: 100%; display: inline-block;">
+                    <partial name="BookBox" model="@book"/>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- Product section end -->
+
+
+<!-- product section start -->
+<section class="tools_product bg-title section-b-space">
+    <div class="container">
+        <div class="row multiple-slider">
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="theme-card">
+                    <h5 class="title-border">Under $20 | Free delivery</h5>
+                    <div class="offer-slider slide-1">
+                        <div>
+                            @foreach (var book in Model.lstFreeDelivery)
+                            {
+                                <div class="media">
+                                    <a asp-controller="Book" asp-action="BookDetails" asp-route-id=@book.BookId>
+                                        <img class="img-fluid blur-up lazyload"
+                                             src="@book.ImageName" alt="">
+                                    </a>
+                                    <div class="media-body align-self-center">
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <a href="product-page(no-sidebar).html">
+                                            <h6>@book.Title</h6>
+                                        </a>
+                                        <h4>$@book.SalesPrice
+                                        </h4>
+                                    </div>
+                                </div>
+                            }                           
+                        </div>
+                        <div>
+                            @foreach (var book in Model.lstNewBooks)
+                            {
+                                <div class="media">
+                                        <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@book.BookId">
+                                        <img class="img-fluid blur-up lazyload"
+                                             src="@book.ImageName" alt="">
+                                    </a>
+                                    <div class="media-body align-self-center">
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@book.BookId">
+                                            <h6>@book.Title</h6>
+                                        </a>
+                                        <h4>$@book.SalesPrice</h4>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-12">
+                <div class="theme-tab">
+                    <div class="bg-title-part">
+                        <h5 class="title-border">RECOMMENDATIONS FOR YOU</h5>
+                        <ul class="tabs tab-title">
+                            <li class="current">
+                                <a href="tab-4">New Products</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-5">Featured Products</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content-cls ratio_asos">
+                        <div id="tab-4" class="tab-content active default">
+                            <div class="product-4 game-product product-m no-arrow">
+                                @foreach (var book in Model.lstAllBooks)
+                                {
+                                    <div class="product-box">
+                                        <partial name="BookBox" model="@book" />
+                                    </div>
+                                }
+                                
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-content">
+                            <div class="product-4 game-product product-m no-arrow">
+                                @foreach (var book in Model.lstRecommendedBooks)
+                                {
+                                    <div class="product-box">
+                                        <partial name="BookBox" model="@book" />
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product section end -->
+

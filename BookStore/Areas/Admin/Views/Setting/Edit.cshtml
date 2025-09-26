@@ -1,0 +1,142 @@
+﻿@model TbSettings
+
+<form class="forms-sample" method="post" enctype="multipart/form-data"
+      asp-controller="Setting" asp-action="Save" role="form" asp-area="Admin">
+    <div class="row" style="padding: 50px;">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body row">
+                    <h4 class="card-title">Slider Form</h4>
+                    <p class="card-description"> @ResGeneral.lblNew or @ResGeneral.lblEdit </p>
+                          <input type="hidden" asp-for="Id"/>
+                    <div class="form-group col-md-6">
+                        <label>Website Name</label>
+                        <input type="text" class="form-control" placeholder="Title" asp-for="WebsiteName" required maxlength="50">
+                        <span class="text-danger"  asp-validation-for="WebsiteName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Address</label>
+                        <input type="text" class="form-control" placeholder="Title" asp-for="Address"  maxlength="50">
+                        <span class="text-danger"  asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Contact Number</label>
+                        <input type="tel" class="form-control" placeholder="Title" asp-for="ContactNumber"  maxlength="20">
+                        <span class="text-danger" asp-validation-for="ContactNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label>@ResAdmin.lblDescription</label>
+                        <textarea type="text" class="form-control" asp-for="WebsiteDescription" placeholder="Description" ></textarea>
+                        <span class="text-danger"  asp-validation-for="WebsiteDescription"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Facebook Link</label>
+                        <input type="url" class="form-control" placeholder="Title" asp-for="FacebookLink" maxlength="100">
+                        <span class="text-danger" asp-validation-for="FacebookLink" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Instgram Link</label>
+                        <input type="url" class="form-control" placeholder="Title" asp-for="InstgramLink" maxlength="100">
+                        <span class="text-danger" asp-validation-for="InstgramLink" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Twitter Link</label>
+                        <input type="url" class="form-control" placeholder="Title" asp-for="TwitterLink" maxlength="100">
+                        <span class="text-danger" asp-validation-for="TwitterLink" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Youtube Link</label>
+                        <input type="url" class="form-control" placeholder="Title" asp-for="YoutubeLink" maxlength="100">
+                        <span class="text-danger" asp-validation-for="YoutubeLink" class="text-danger"></span>
+                    </div>
+                    <div class="row col-lg-12">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group">
+                                <label>Logo</label>
+                                <input type="file" class="form-control" placeholder="Image" asp-for="Logo" name="Files1" onchange="showSelectedImage(event, 'logoPreview')" accept=".jpg, .png, .jpeg" id="logoImage">
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <span id="logoName"></span>
+                                    <div id="logoSrc">
+                                        <img id="logoPreview" src="~/Uploads/Settings/@Model.Logo" style="width:200px; height:200px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row col-lg-12">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group">
+                                <label>MiddlePanner</label>
+                                <input type="file" class="form-control" placeholder="Image" asp-for="MiddlePanner" name="Files2" onchange="showSelectedImage(event, 'middlePannerPreview')" accept=".jpg, .png, .jpeg" id="middlePannerImage">
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <span id="middlePannerName"></span>
+                                    <div id="middlePannerSrc">
+                                        <img id="middlePannerPreview" src="~/Uploads/Settings/@Model.MiddlePanner" style="width:200px; height:200px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row col-lg-12">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group">
+                                <label>LastPanner</label>
+                                <input type="file" class="form-control" placeholder="Image" asp-for="LastPanner" name="Files3" onchange="showSelectedImage(event, 'lastPannerPreview')" accept=".jpg, .png, .jpeg" id="lastPannerImage">
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <span id="lastPannerName"></span>
+                                    <div id="lastPannerSrc">
+                                        <img id="lastPannerPreview" src="~/Uploads/Settings/@Model.LastPanner" style="width:200px; height:200px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-gradient-primary me-2">@ResGeneral.lblSubmit</button>
+                        <a type="button" class="btn btn-light" asp-controller="Home" asp-action="Index" asp-area="Admin">@ResGeneral.lblCancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        function showSelectedImage(event, previewId) {
+            const fileInput = event.target;
+            const file = fileInput.files[0];
+            const previewImage = document.getElementById(previewId);
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result;
+                };
+
+                reader.readAsDataURL(file);  
+            }
+
+            const fileNameDisplay = fileInput.parentElement.nextElementSibling.querySelector('span');
+            fileNameDisplay.innerHTML = file.name;
+        }
+    </script>
+
+}

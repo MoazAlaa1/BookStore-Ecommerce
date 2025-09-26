@@ -1,0 +1,29 @@
+﻿@model TbPublish
+ <div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Publisher form</h4>
+                <p class="card-description"> @ResGeneral.lblNew or @ResGeneral.lblEdit </p>
+                <form class="forms-sample" method="post" enctype="multipart/form-data"
+                      asp-controller="Publish" asp-action="Save" role="form" asp-area="Admin">
+                      <input type="hidden" asp-for="PublishId"/>
+                      <input type="hidden" asp-for="CurrentState"/>
+                    <div class="form-group">
+                        <label>@ResAdmin.lblPublisherName</label>
+                        <input type="text" class="form-control" placeholder="Publisher Name" asp-for="Publisher" maxlength="50">
+                        <span asp-validation-for="Publisher" class="text-danger"></span>
+                    </div>               
+                    <button type="submit" class="btn btn-gradient-primary me-2">@ResGeneral.lblSubmit</button>
+                    <a class="btn btn-light" asp-controller="Publish" asp-action="List" asp-area="Admin">@ResGeneral.lblCancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+}

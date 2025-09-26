@@ -1,0 +1,69 @@
+﻿@model List<VwPurchaseInvoiceBook>
+
+<div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h3 class="page-title"> Invoice </h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">@ResAdmin.lblPurchaseInvoice</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card px-2">
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <h3 class="text-right my-5">Invoice&nbsp;&nbsp;#INV-@Model[0].InvoiceId</h3>
+                                <hr>
+                            </div>
+                            <div class="container-fluid d-flex justify-content-between">
+                                <div class="col-lg-3 ps-0">
+                                    <p class="mb-0 mt-5">@ResAdmin.lblSupplierName: @Model[0].SupplierName</p>
+                                    <p class="mb-0 mt-5">@ResAdmin.lblInvoiceDate : @Model[0].InvoiceDate</p>
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-5 d-flex justify-content-center w-100">
+                                <div class="table-responsive w-100">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="bg-dark text-white">
+                                                <th>#</th>
+                                                <th>@ResAdmin.lblTitle</th>
+                                                <th class="text-right">@ResAdmin.lblQuantity</th>
+                                                <th class="text-right">@ResAdmin.lblUnitCost</th>
+                                                <th class="text-right">@ResAdmin.lblTotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for(int i=0;i<Model.Count;i++)
+                                            {
+                                                <tr class="text-right">
+                                                    <td class="text-left">@(i+1)</td>
+                                                    <td class="text-left">@Model[i].Title</td>
+                                                    <td>@Model[i].Qty</td>
+                                                    <td>@Model[i].PurchasePrice</td>
+                                                    <td>@Model[i].Price</td>
+                                                </tr>
+                                            }                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-5 w-100">
+                                <h4 class="text-right mb-5">@ResAdmin.lblTotal : $@Model[0].TotalPrice</h4>
+                                <hr>
+                            </div>
+                            <div class="container-fluid w-100">
+                                <a asp-controller="Purchase" asp-action="Edit" asp-area="Admin" asp-route-id="@Model[0].InvoiceId" class="btn btn-primary float-end mt-4 ms-2"><i class="mdi mdi-printer me-1"></i>@ResGeneral.lblEdit</a>
+                                <a asp-controller="Purchase" asp-action="List" asp-area="Admin" class="btn btn-success float-end mt-4"><i class="mdi mdi-telegram me-1"></i>@ResGeneral.lblBack</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

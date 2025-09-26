@@ -1,0 +1,38 @@
+﻿@model List<TbSalesInvoice>
+
+@section Styles{
+    <link href="~/Fontend/css/MyOrders.css" rel="stylesheet">
+}
+    
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">My Orders</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Invoice ID</th>
+                    <th>Invoice Date</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @for (int i=0; i<Model.Count;i++)
+                    {
+                      <tr>
+                        <td>@(i+1)</td>
+                        <td>@Model[i].InvoiceId</td>
+                        <td>@Model[i].InvoiceDate</td>
+                        <td>$@Model[i].TotalPrice</td>
+                        <td>
+                            <a class="btn btn-info" asp-controller="Order" asp-action="ShowOrderDetails" asp-route-id="@Model[i].InvoiceId">View</a>
+                        </td>
+                     </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>

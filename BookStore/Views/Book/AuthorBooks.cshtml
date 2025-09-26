@@ -1,0 +1,41 @@
+﻿@model List<TbBook>
+
+
+<section class="pt-0 section-b-space ratio_asos">
+    <div class="container">
+        <div class="">
+            <div class="col-12 product-related">
+                <h2>@ViewBag.Name</h2>
+            </div>
+            <div class="row game-product grid-products">
+                @foreach (var book in Model)
+                {
+                    <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="img-wrapper">
+                            <div class="front">
+                                <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@book.BookId">
+                                    <img src="@book.ImageName"
+                                         class="img-fluid blur-up lazyload bg-img" alt="">
+                                </a>
+                            </div>
+                            <a class="add-button" asp-controller="Order" asp-action="AddToCart" asp-route-bookId="@book.BookId">
+                                add to
+                                cart
+                            </a>
+                        </div>
+                        <div class="product-detail">
+                            <div class="rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div>
+                            <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@book.BookId">
+                                <h6>@book.Title</h6>
+                            </a>
+                            <h4>$@book.SalesPrice</h4>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        
+    </div>
+</section>

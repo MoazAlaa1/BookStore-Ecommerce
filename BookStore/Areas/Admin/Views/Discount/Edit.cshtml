@@ -1,0 +1,33 @@
+﻿@model TbDiscount
+ <div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Discount form</h4>
+                <p class="card-description"> @ResGeneral.lblNew or @ResGeneral.lblEdit</p>
+                <form class="forms-sample" method="post" enctype="multipart/form-data"
+                      asp-controller="Discount" asp-action="Save" role="form" asp-area="Admin">
+                      <input type="hidden" asp-for="DiscountId" />
+                    <div class="form-group">
+                        <label>@ResAdmin.lblDiscountPercent</label>
+                        <input type="number" class="form-control" placeholder="Discount Parcent" asp-for="DiscountPercent" max="100" min="0">
+                        <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>@ResAdmin.lblExpiryDate</label>
+                        <input type="date" class="form-control" asp-for="@Model.ExpiryDate">
+                        <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                    </div>                    
+                    <button type="submit" class="btn btn-gradient-primary me-2">@ResGeneral.lblSubmit</button>
+                    <a class="btn btn-light" asp-controller="Discount" asp-action="List" asp-area="Admin">@ResGeneral.lblCancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+}

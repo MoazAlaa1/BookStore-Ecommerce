@@ -1,0 +1,33 @@
+﻿@section Styles 
+{
+    <link href="~/custom/css/pagination.css" rel="stylesheet" />
+}
+<!--section start-->
+<br />
+<br />
+<br />
+<section class="section-b-space ratio_asos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 product-related">
+                <h2>@ViewBag.CategoryName</h2>
+            </div>
+        </div>
+        <div class="row game-product grid-products" id="ItemArea">
+        </div>
+        <div class="product-pagination" id="ItemPagination">
+
+        </div>
+    </div>
+</section>
+
+@section Scripts
+{
+    <script src="~/custom/js/pagination.js"></script>
+    <script src="~/modules/books.js"></script>
+    <script>
+        console.log(@ViewBag.CategoryId)
+        ClsBooks.GetAllByCategoryId(@ViewBag.CategoryId)
+    </script>
+
+}

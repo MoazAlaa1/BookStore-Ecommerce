@@ -1,0 +1,100 @@
+﻿ @model List<TbBook>
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="page-title">
+                    <h2>search</h2>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">search</li> @ViewBag.SearchItem
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb End -->
+<!--section start-->
+<section class="authentication-page">
+    <div class="container">
+        <section class="search-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        @using (Html.BeginForm("Search", "Home", FormMethod.Get))
+                        {
+                            <div class="input-group">
+                                <input type="text" name="searchItem" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                       placeholder="Search By Title or Isbn." value="@ViewBag.SearchItem" />
+                                <input type="submit" class="btn btn-solid" value="Search" />
+                            </div>
+                        }
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<section class="pt-0 section-b-space ratio_asos">
+    <div class="container">
+        <div class="row game-product grid-products" id="ItemArea">
+            @* @if(Model.Count > 0)
+            {
+                @foreach (var book in Model)
+                {
+                    <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="img-wrapper">
+                            <div class="front">
+                                <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@book.BookId">
+                                    <img src="@book.ImageName"
+                                            class="img-fluid blur-up lazyload bg-img" alt="">
+                                </a>
+                            </div>
+                            <a class="add-button" asp-controller="Order" asp-action="AddToCart" asp-route-bookId="@book.BookId">
+                                add to
+                                cart
+                            </a>
+                        </div>
+                        <div class="product-detail">
+                            <div class="rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div>
+                            <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@book.BookId">
+                                <h6>@book.Title</h6>
+                            </a>
+                            <h4>$@book.SalesPrice</h4>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <h4>This Book is not found</h4>
+            }  *@
+        </div>
+        <div class="product-pagination" id="ItemPagination">
+        </div>
+    </div>
+</section>
+@section Styles
+{
+    <link href="~/custom/css/pagination.css" rel="stylesheet" />
+}
+}
+@section Scripts
+{
+    <script src="~/custom/js/pagination.js"></script>
+    <script src="~/modules/books.js"></script>
+    <script>
+            ClsBooks.Search("@ViewBag.SearchItem")
+    </script>
+}

@@ -1,0 +1,86 @@
+﻿@model List<VwSalesInvoiceBook>
+
+    @section Styles {
+    <link rel="stylesheet" href="~/Admin/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/Admin/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <link rel="stylesheet" href="~/Admin/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+
+    <link rel="stylesheet" href="~/Admin/css/demo_3/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/Admin/images/favicon.png" />
+    }
+<div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h3 class="page-title"> Invoice </h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Sales Invoice</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card px-2">
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <h3 class="text-right my-5">Invoice&nbsp;&nbsp;#INV-@Model[0].InvoiceId</h3>
+                                <hr>
+                            </div>
+                            <div class="container-fluid d-flex justify-content-between">
+                                <div class="col-lg-3 ps-0">
+                                    <p class="mt-5 mb-2"><b>Cutomer Info</b></p>
+                                    <p>@Model[0].CutomerName<br>@Model[0].PhoneNumber<br>@Model[0].Adress</p>
+                                </div>
+                            </div>
+                            <div class="container-fluid d-flex justify-content-between">
+                                <div class="col-lg-3 ps-0">
+                                    <p class="mb-0 mt-5">Invoice Date : @Model[0].InvoiceDate</p>
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-5 d-flex justify-content-center w-100">
+                                <div class="table-responsive w-100">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="bg-dark text-white">
+                                                <th>#</th>
+                                                <th>Title</th>
+                                                <th class="text-right">Quantity</th>
+                                                <th class="text-right">Unit cost</th>
+                                                <th class="text-right">Discount Percent</th>
+                                                <th class="text-right">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for(int i=0;i<Model.Count;i++)
+                                            {
+                                                <tr class="text-right">
+                                                    <td class="text-left">@(i+1)</td>
+                                                    <td class="text-left">@Model[i].Title</td>
+                                                    <td>@Model[i].Qty</td>
+                                                    <td>@Model[i].SalesPrice</td>
+                                                    <td>@Model[i].DiscountPercent</td>
+                                                    <td>@Model[i].Price</td>
+                                                </tr>
+                                            }                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-5 w-100">
+                                <p class="text-right mb-2">Sub - Total amount: $@(Model[0].TotalPrice - Model[0].DeliveryPrice)</p>
+                                <p class="text-right">Shipping Cost : $@Model[0].DeliveryPrice</p>
+                                <h4 class="text-right mb-5">Total : $@Model[0].TotalPrice</h4>
+                                <hr>
+                            </div>
+                            <div class="container-fluid w-100">
+                                <a asp-controller="Order" asp-action="MyOrder" class="btn btn-success float-end mt-4"><i class="mdi mdi-telegram me-1"></i>Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

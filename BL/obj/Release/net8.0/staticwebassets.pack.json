@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BL.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BL.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.BL.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.BL.props",
+      "PackagePath": "build\\BL.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BL.props",
+      "PackagePath": "buildMultiTargeting\\BL.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.BL.props",
+      "PackagePath": "buildTransitive\\BL.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

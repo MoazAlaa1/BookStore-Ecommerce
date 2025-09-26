@@ -1,0 +1,457 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\areas\\admin\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:areas\\admin\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbsalesinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbpurchaseinvoicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbcustomerdeliverinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75993013-4B86-482E-B56C-0B4FC9D41EA7}|..\\BL\\BL.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bl\\clssalesinvoicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75993013-4B86-482E-B56C-0B4FC9D41EA7}|..\\BL\\BL.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bl\\clscustomerinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75993013-4B86-482E-B56C-0B4FC9D41EA7}|..\\BL\\BL.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bl\\clssalesinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\areas\\admin\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:areas\\admin\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75993013-4B86-482E-B56C-0B4FC9D41EA7}|..\\BL\\BL.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bl\\clscategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75993013-4B86-482E-B56C-0B4FC9D41EA7}|..\\BL\\BL.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bl\\clsbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75993013-4B86-482E-B56C-0B4FC9D41EA7}|..\\BL\\BL.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bl\\bookstorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\areas\\admin\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:areas\\admin\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\areas\\admin\\views\\book\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:areas\\admin\\views\\book\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F019CAB-7059-4A59-82D0-827567EEE8CF}|BookStore.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbdiscount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbpublish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF1AA42-05AD-4D70-82E6-18774A38B0A5}|..\\Domains\\Domains.csproj|e:\\visual studio projects 2022\\web diplom asp .net projects\\asp .net core mvc\\bookstoreproject\\domains\\tbauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TbPurchaseInvoiceBook.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbPurchaseInvoiceBook.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbPurchaseInvoiceBook.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbPurchaseInvoiceBook.cs",
+              "RelativeToolTip": "..\\Domains\\TbPurchaseInvoiceBook.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA7wBcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T21:20:44.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TbPages.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbPages.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbPages.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbPages.cs",
+              "RelativeToolTip": "..\\Domains\\TbPages.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T21:20:31.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TbSalesInvoice.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbSalesInvoice.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbSalesInvoice.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbSalesInvoice.cs",
+              "RelativeToolTip": "..\\Domains\\TbSalesInvoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T21:18:21.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T03:28:36.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PagesController.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PagesController.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\PagesController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwDEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T23:52:10.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAIwLQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:54:59.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TbCustomerDeliverInfo.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbCustomerDeliverInfo.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbCustomerDeliverInfo.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbCustomerDeliverInfo.cs",
+              "RelativeToolTip": "..\\Domains\\TbCustomerDeliverInfo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T21:18:14.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Views\\Book\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Book\\Edit.cshtml",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Views\\Book\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Book\\Edit.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAIgAAACKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T00:12:08.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClsCustomerInvoiceInfo.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsCustomerInvoiceInfo.cs",
+              "RelativeDocumentMoniker": "..\\BL\\ClsCustomerInvoiceInfo.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsCustomerInvoiceInfo.cs",
+              "RelativeToolTip": "..\\BL\\ClsCustomerInvoiceInfo.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAhwBcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:57:27.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClsSalesInvoice.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsSalesInvoice.cs",
+              "RelativeDocumentMoniker": "..\\BL\\ClsSalesInvoice.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsSalesInvoice.cs",
+              "RelativeToolTip": "..\\BL\\ClsSalesInvoice.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAD4v0AAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:56:43.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClsSalesInvoiceBook.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsSalesInvoiceBook.cs",
+              "RelativeDocumentMoniker": "..\\BL\\ClsSalesInvoiceBook.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsSalesInvoiceBook.cs",
+              "RelativeToolTip": "..\\BL\\ClsSalesInvoiceBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:56:55.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TbBook.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbBook.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbBook.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbBook.cs",
+              "RelativeToolTip": "..\\Domains\\TbBook.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAhwAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:53:08.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SettingController.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\SettingController.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\SettingController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvyQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T16:44:41.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:40:14.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T16:04:35.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Register.cshtml",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "Views\\User\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T16:49:38.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClsCategory.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsCategory.cs",
+              "RelativeDocumentMoniker": "..\\BL\\ClsCategory.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsCategory.cs",
+              "RelativeToolTip": "..\\BL\\ClsCategory.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T18:20:21.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\Program.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\Program.cs",
+              "RelativeToolTip": "..\\Domains\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T19:09:09.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Views\\Book\\List.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Book\\List.cshtml",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Views\\Book\\List.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Book\\List.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-30T13:51:21.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T17:39:38.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TbCategory.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbCategory.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbCategory.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbCategory.cs",
+              "RelativeToolTip": "..\\Domains\\TbCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:36:20.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TbPublish.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbPublish.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbPublish.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbPublish.cs",
+              "RelativeToolTip": "..\\Domains\\TbPublish.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:29:35.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TbDiscount.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbDiscount.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbDiscount.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbDiscount.cs",
+              "RelativeToolTip": "..\\Domains\\TbDiscount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:29:31.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TbAuthor.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbAuthor.cs",
+              "RelativeDocumentMoniker": "..\\Domains\\TbAuthor.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\Domains\\TbAuthor.cs",
+              "RelativeToolTip": "..\\Domains\\TbAuthor.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:28:26.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\BookController.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BookStore\\Areas\\Admin\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\BookController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAuwD4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T15:21:40.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClsBook.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsBook.cs",
+              "RelativeDocumentMoniker": "..\\BL\\ClsBook.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\ClsBook.cs",
+              "RelativeToolTip": "..\\BL\\ClsBook.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAA8wJ4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T22:46:45.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookStoreContext.cs",
+              "DocumentMoniker": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\BookStoreContext.cs",
+              "RelativeDocumentMoniker": "..\\BL\\BookStoreContext.cs",
+              "ToolTip": "E:\\visual studio projects 2022\\Web Diplom ASP .NET Projects\\ASP .NET Core MVC\\BookStoreProject\\BL\\BookStoreContext.cs",
+              "RelativeToolTip": "..\\BL\\BookStoreContext.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAAwBQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T20:02:43.023Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

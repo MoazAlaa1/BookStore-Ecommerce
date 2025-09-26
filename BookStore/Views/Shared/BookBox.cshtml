@@ -1,0 +1,21 @@
+﻿@model TbBook
+<div class="img-wrapper">
+    <div class="front">
+        <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@Model.BookId">
+            <img src="@Model.ImageName" class="img-fluid blur-up lazyload bg-img" alt="">
+        </a>
+    </div>
+    <a class="add-button" asp-controller="Order" asp-action="AddToCart" asp-route-bookId="@Model.BookId">
+        add to
+        cart
+    </a>
+</div>
+<div class="product-detail">
+    <div class="rating">
+        <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+    </div>
+    <a asp-controller="Book" asp-action="BookDetails" asp-route-id="@Model.BookId">
+        <h6 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">@Model.Title</h6>
+    </a>
+    <h4>$@Model.SalesPrice</h4>
+</div>

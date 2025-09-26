@@ -1,0 +1,80 @@
+﻿@model VmCustomerInvoiceInfo
+<section class="section-b-space">
+    <div class="container">
+        <div class="checkout-page">
+            <div class="checkout-form">
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <div class="checkout-details">
+                        <div class="order-box">
+                            <div class="title-box">
+                                <div>Product <span>Total</span></div>
+                            </div>
+                            <ul class="qty">
+                                @foreach(var book in Model.ShoppingCart.lstBooks)
+                                {
+                                    <li>@book.Title × @book.SalesQty <span>$@book.Total</span></li>
+                                }
+                            </ul>
+                            <ul class="sub-total">
+                                <li>Subtotal <span class="count">$@Model.ShoppingCart.SubTotal</span></li>
+                                <li>Shipping Cost <span class="count">$@Model.ShoppingCart.ShippingCost</span></li>
+                            </ul>
+                            <ul class="total">
+                                <li>Total <span class="count">$@Model.ShoppingCart.Total</span></li>
+                            </ul>
+                        </div>
+                        <div class="payment-box">
+                            <div class="upper-box">
+                                <div class="payment-options">
+                                    <ul>
+                                        <li>
+                                            <div class="radio-option">
+                                                <input type="radio" name="payment-group" id="payment-1"
+                                                       checked="checked">
+                                                <label for="payment-1">
+                                                    Check Payments<span class="small-text">
+                                                        Please send a check to Store
+                                                        Name, Store Street, Store Town, Store State /
+                                                        County, Store Postcode.
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio-option">
+                                                <input type="radio" name="payment-group" id="payment-2">
+                                                <label for="payment-2">
+                                                    Cash On Delivery<span class="small-text">
+                                                        Please send a check to Store
+                                                        Name, Store Street, Store Town, Store State /
+                                                        County, Store Postcode.
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio-option paypal">
+                                                <input type="radio" name="payment-group" id="payment-3">
+                                                <label for="payment-3">
+                                                    PayPal<span class="image">
+                                                        <img src="~/Fontend/images/paypal.png"
+                                                             alt="">
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="text-left">
+                                <a asp-controller="Order" asp-action="SuccedOrders" asp-route-Info="@Model.CustomerDetails" class="btn-solid btn">Place Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

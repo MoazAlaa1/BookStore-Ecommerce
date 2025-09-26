@@ -1,0 +1,54 @@
+﻿@model TbCustomerDeliverInfo
+<!-- section start -->
+<section class="section-b-space">
+    <div class="container">
+        <div class="checkout-page">
+            <div class="checkout-form">
+                <form enctype="multipart/form-data" role="form"
+                    asp-controller="Order" asp-action="Payment">
+                    <input type="hidden" asp-for="Governorate"/>
+                    <input type="hidden" asp-for="CustomerDeliverId"/>
+                    <input type="hidden" asp-for="UserId"/>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="checkout-title">
+                                <h3>Customer Details</h3>
+                            </div>
+                            <div class="row check-out">
+                                <div class="form-group col-md-12 col-sm-6 col-xs-12">
+                                    <div class="field-label">Name</div>
+                                    <input type="text"  asp-for="@Model.CutomerName" placeholder="Name">
+                                    <span asp-validation-for="CutomerName" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-6 col-xs-12">
+                                    <div class="field-label">Phone</div>
+                                    <input type="text" asp-for="@Model.PhoneNumber" placeholder="Phone Number">
+                                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Governorate</div>
+                                    <select asp-for="@Model.GovernorateId" asp-items="@(new SelectList(ViewBag.lstGovernorates,"GovernorateId","GovernorateName"))">
+                                    </select>
+                                    <span asp-validation-for="GovernorateId" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Address</div>
+                                    <input type="text" asp-for="@Model.Adress" placeholder="Delivery Address">
+                                    <span asp-validation-for="Adress" class="text-danger"></span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="text-left">
+                        <button type="submit" class="btn-solid btn">Place Order</button>
+                        <a class="btn-solid btn" asp-controller="Order" asp-action="MyCart">Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section end -->
+

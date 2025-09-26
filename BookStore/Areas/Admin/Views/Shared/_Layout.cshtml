@@ -1,0 +1,192 @@
+﻿@inject UserManager<ApplicationUser> userManager
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/Admin/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/Admin/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="~/Admin/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="~/Admin/css/demo_3/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/Admin/images/favicon.png" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_horizontal-navbar.html -->
+        <div class="horizontal-menu">
+            <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+                <div class="container">
+                    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                        <a class="navbar-brand brand-logo" href="Admin/Home/Index"><img src="~/Admin/images/logo.svg" alt="logo" /></a>
+                        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="~/Admin/images/logo-mini.svg" alt="logo" /></a>
+                    </div>
+                    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                        <ul class="navbar-nav navbar-nav-right">
+                            <li class="nav-item nav-profile dropdown">
+                                <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="nav-profile-img">
+                                        <img src="~/Admin/images/pic-1.png" alt="image">
+                                        <span class="availability-status online"></span>
+                                    </div>
+                                    <div class="nav-profile-text">
+                                        @{
+                                            var user = await userManager.GetUserAsync(User);
+
+                                            <p class="text-black">@user.FirstName @user.LastName</p>
+                                        }
+                                        
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" asp-controller="User" asp-action="LogOut" asp-area="">
+                                        <i class="mdi mdi-logout me-2 text-primary"></i> LogOut
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+            <nav class="bottom-navbar">
+                <div class="container">
+                    <ul class="nav page-navigation">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="index" asp-area="Admin">
+                                <i class="mdi mdi-home menu-icon"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="mdi mdi-file-restore menu-icon"></i>
+                                <span class="menu-title">Books</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Book" asp-action="List" asp-area="Admin">All Books</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Discount" asp-action="List" asp-area="Admin">Discount List</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mega-menu">
+                            <a class="nav-link" asp-controller="Categories" asp-action="List" asp-area="Admin">
+                                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                                <span class="menu-title">Categories</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Author" asp-action="List" asp-area="Admin">
+                                <i class="mdi mdi-clipboard-text menu-icon"></i>
+                                <span class="menu-title">Authors</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mega-menu">
+                            <a class="nav-link" asp-controller="Publish" asp-action="List" asp-area="Admin">
+                                <i class="mdi mdi-chart-bar menu-icon"></i>
+                                <span class="menu-title">Publishers</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mega-menu">
+                            <a class="nav-link" asp-controller="Supplier" asp-action="List" asp-area="Admin">
+                                <i class="mdi mdi-content-copy menu-icon"></i>
+                                <span class="menu-title">Suppliers</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="mdi mdi-webpack menu-icon"></i>
+                                <span class="menu-title">Shipping</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" asp-controller="DeliveryMan" asp-action="List" asp-area="Admin">Delivery Men</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Governorate" asp-action="List" asp-area="Admin">Shipping Governorates</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="mdi mdi-webpack menu-icon"></i>
+                                <span class="menu-title">Invoices</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Purchase" asp-action="List" asp-area="Admin">Purchase</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Sales" asp-action="List" asp-area="Admin">Sales</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="mdi mdi-webpack menu-icon"></i>
+                                <span class="menu-title">Other</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Pages" asp-action="List" asp-area="Admin">Addition Pages</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Slider" asp-action="List" asp-area="Admin">Slider</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Setting" asp-action="Edit" asp-area="Admin">Setting</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+                @RenderBody()
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024 All rights reserved.</span>
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="~/Admin/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="~/Admin/js/off-canvas.js"></script>
+    <script src="~/Admin/js/hoverable-collapse.js"></script>
+    <script src="~/Admin/js/misc.js"></script>
+    <script src="~/Admin/js/settings.js"></script>
+    <script src="~/Admin/js/todolist.js"></script>
+    <script src="~/Admin/js/jquery.cookie.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="~/Admin/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+    @RenderSection("Scripts", false)
+</body>
+</html>

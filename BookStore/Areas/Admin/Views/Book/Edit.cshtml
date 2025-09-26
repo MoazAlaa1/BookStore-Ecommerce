@@ -1,0 +1,162 @@
+﻿@model TbBook
+@section Styles
+{
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="~/Admin/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="~/Admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <!-- End plugin css for this page -->
+    <style>
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #444;
+            line-height: 0px;
+        }
+
+        .select2-container .select2-selection--single .select2-selection__rendered {
+            display: block;
+            padding-left: 0px;
+            padding-right: 0px;
+            overflow:visible;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+
+}
+
+<form class="forms-sample" method="post" enctype="multipart/form-data"
+      asp-controller="Book" asp-action="Save" role="form" asp-area="Admin">
+    <div class="row" style="padding: 50px;">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body row">
+                    <h4 class="card-title">Book Form</h4>
+                    <p class="card-description"> @ResGeneral.lblNew or @ResGeneral.lblEdit </p>
+                          <input type="hidden" asp-for="BookId"/>
+                          <input type="hidden" asp-for="CreatedBy"/>
+                          <input type="hidden" asp-for="CreatedDate"/>
+                          <input type="hidden" asp-for="CurrentState"/>
+                          <input type="hidden" asp-for="ImageName"/>
+                          <input type="hidden" asp-for="Qty"/>
+                        <div class="form-group col-md-6">
+                            <label>@ResAdmin.lblTitle</label>
+                            <input type="text" class="form-control" placeholder="Title" asp-for="Title">
+                            <span class="text-danger"  asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>@ResAdmin.lblIsbn</label>
+                            <input type="text" class="form-control" asp-for="Isbn" />
+                            <span class="text-danger"  asp-validation-for="Isbn"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>@ResAdmin.lblNumPages</label>
+                            <input type="number" asp-for="NumberOfPages" class="form-control" placeholder="Pages" min="1" max="1000" />
+                            <span class="text-danger"  asp-validation-for="NumberOfPages"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>@ResAdmin.lblPublishYear</label>
+                            <input type="text" asp-for="PublishYear" class="form-control" placeholder="Publish Year">
+                            <span class="text-danger"  asp-validation-for="PublishYear"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>@ResAdmin.lblSalesPrice</label>
+                            <input type="text" asp-for="SalesPrice" class="form-control" placeholder="Sales Price" min="10" max="5000">
+                            <span class="text-danger"  asp-validation-for="SalesPrice"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>@ResAdmin.lblPurchasePrice</label>
+                        <input type="text" asp-for="PurchasePrice" class="form-control" placeholder="Purchase Price" min="10" max="5000">
+                            <span class="text-danger" asp-validation-for="PurchasePrice"></span>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="form-group col-md-8">
+                                <label>@ResAdmin.lblCategoryName</label>
+                                <select class="js-example-basic-single" style="width:100%" asp-for="CategoryId" asp-items="@(new SelectList(ViewBag.lstCategories,"CategoryId","CategoryName"))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="CategoryId"></span>
+                             </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="form-group col-md-8">
+                                <label>@ResAdmin.lblPublisherName</label>
+                                <select class="js-example-basic-single" style="width:100%" asp-for="PublishId" asp-items="@(new SelectList(ViewBag.lstPublishers,"PublishId","Publisher"))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="PublishId"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="form-group col-md-8">
+                                <label>@ResAdmin.lblAuthorName</label>
+                            <select class="js-example-basic-single" style="width:100%" asp-for="AuthorId" asp-items="@(new SelectList(ViewBag.lstAuthors,"AuthorId","AuthorName"))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="AuthorId"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="form-group col-md-8">
+                                <label>@ResAdmin.lblDiscountPercent</label>
+                                <select class="js-example-basic-single" style="width:100%" asp-for="DiscountId" asp-items="@(new SelectList(ViewBag.lstDiscounts,"DiscountId","DiscountPercent"))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="DiscountId"></span>
+                            </div>
+                        </div>       
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6 col-xs-6">
+                                <div class="form-group ">
+                                    <label>@ResAdmin.lblDescription</label>
+                                    <textarea class="form-control" placeholder="Description" maxlength="4000" data-val="true" data-val-maxlength="please Enter in maxmam 4000 character" data-val-maxlength-max="4000" id="Description" name="Description"></textarea>
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group ">
+                                    <label>@ResAdmin.lblImage</label>
+                                    <input type="file" class="form-control" placeholder="Image" name="Files" onchange="showSelectedImage(event)" accept=".jpg, .png, .jpeg" id="ImageName">
+                                </div>
+                            </div>
+                            <div class="col-md-6 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span id="tbImgName"></span>
+                                        <div id="tbImgSrc">
+                                            <img src="/Uploads/Books/" style="width:95%; height:300px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <button type="submit" class="btn btn-gradient-primary me-2">@ResGeneral.lblSubmit</button>
+                        <a class="btn btn-light" asp-controller="Book" asp-action="List" asp-area="Admin">@ResGeneral.lblCancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <!-- Plugin js for this page -->
+    <script src="~/Admin/vendors/select2/select2.min.js"></script>
+    <script src="~/Admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page -->
+    <script src="~/Admin/js/file-upload.js"></script>
+    <script src="~/Admin/js/typeahead.js"></script>
+    <script src="~/Admin/js/select2.js"></script>
+    <!-- End custom js for this page -->
+    <script>
+        function showSelectedImage(event) {
+            const fileInput = event.target;
+            const files = fileInput.files;
+
+            if (files.length > 0) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imgSrc = document.querySelector('#tbImgSrc img');
+                    imgSrc.src = e.target.result;
+                }
+                reader.readAsDataURL(files[0]);
+            }
+        }
+    </script>
+}
