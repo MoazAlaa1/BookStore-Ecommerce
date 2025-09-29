@@ -75,7 +75,7 @@ A fully functional online bookstore built with ASP.NET, featuring a modern UI, b
 
 1. **For Visitors**: Browse books without registration
 2. **For Registered Users**: Full access to cart and order features
-3. **Admin Features**: Book management and inventory control (if implemented)
+3. **Admin Features**: Book management and inventory control 
 
 ---
 
